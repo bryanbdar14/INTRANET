@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORCE | Avance Curricular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand icon-hamburger" href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger" title="Toggle Navigation" data-placement="right" data-toggle="tooltip" id="triple"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html"><span class="text-black">INTRANET</span> <span class="text-danger text-danger-02">ALUMNOS</span></a>
+                    <a class="navbar-brand icon-bell" data-toggle="popover" title="" data-placement="bottom" data-content="<div> <i class='far fa-bell amarillo'></i> Se actualizo la intranet<small class='bell-left'>24/07</small></div>" data-html="true"> <span class="glyphicon glyphicon-bell"></span></a>
+                </div>
+                <ul class=" pull-right">
+                    <li class="dropdown menudrop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNTExMzUzOF5BMl5BanBnXkFtZTgwOTI1MjA3OTE@._V1_UX172_CR0,0,172,256_AL_.jpg" class="img-circle" height="30" width="30"> Bryan Arrivasplata <span class="caret caret1"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="" role="group" aria-label="...">
+                                    <a href='nota.html'><button type="button" class="btn btn-especial"><span class="fas fa-pencil-alt celeste"></span><br>Notas</button></a>
+                                    <a href='clave.html'><button type="button" class="btn btn-especial"><span class="fas fa-key celeste"></span><br>Cambiar Clave</button></a>
+                                    <a href='datos_personales.html'><button type="button" class="btn btn-especial"><span class="fas fa-user celeste"></span><br>vCard</button></a>
+                                </div>    
+                            </li>
+                            <li>
+                                <a class="modify" href='index.html'><button type="button" class="btn btn-block btn-especial-verde"><span class="fas fa-sign-out-alt blanco"></span><br><span class="blanco">Cerrar Sesión</span></button></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <ul class="menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+            <li>
+                <a href="#"><span class="glyphicon glyphicon-user"></span> Ficha de Usuario <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='datos_personales.html'><span>Datos Personales</span></a></li>
+                    <li><a href='clave.html'><span>Cambio de Clave</span></a></li>
+                    <li><a href='#'><span>Vincular Facebook</span></a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Informacion Academica <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li class="active"><a href='avance_curricular.html'><span>Avance Curricular</span></a></li>
+                    <li><a href='ficha_academica.html'><span>Ficha Academica</span></a></li>
+                    <li><a href='ficha_academica_depurada.html'><span>Ficha Academica Depurada</span></a></li>
+                    <li><a href='hoja_no_adeudo.html'><span>Hoja de no Adeudo</span></a></li>
+                    <li><a href='rendimiento_periodo.html'><span>Rendimiento por Periodo</span></a></li>
+                    <li><a href='matricula_horario.html'><span>Matricula y Horario</span></a></li>
+                    <li><a href='reporte_asistencia.html'><span>Reporte de Asistencia</span></a></li>
+                    <li><a href='nota.html'><span>Mis Notas a la Fecha</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> Mis Tramites <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='carnet.html'><span>Carné Universitario</span></a></li>
+                </ul>
+            </li>
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion </a></li>
+        </ul>
+    </section>
+    <div class="content">
+        <div class="col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Alumno </a></li>
+                <li class="active">Avance Curricular</li>
+            </ol>
+        </div>
+        <div class="col-lg-12 ref">
+            <div class="list-group list-group-01 lg-p">
+                <div class="header-alumno list-active">
+                    Datos del Alumno
+                    <button class="btn  pull-right collapsed alumno-collapse" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                    </button>
+                </div>
+                <div class="collapse in nombre-alumno list-active_second" id="collapseExample" aria-expanded="true">
+                    <h4>Arrivasplata Rojas,</h4>
+                    <h4>Bryan Daniell</h4>
+                </div>
+
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-barcode"></span>
+                    <h5 class="list-group-item-heading"><strong>Código UNI :</strong></h5>
+                    <p class="list-group-item-text"> 20172657B</p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    <h5 class="list-group-item-heading"><strong>Facultad : </strong></h5>
+                    <p class="list-group-item-text"> INGENIERIA INDUSTRIAL Y DE SISTEMAS (FIIS)</p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                    <h5 class="list-group-item-heading"><strong>Especialidad : </strong></h5>
+                    <p class="list-group-item-text"> INGENIERÍA DE SISTEMAS (I2)
+                    </p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-pushpin"></span>
+                    <h5 class="list-group-item-heading"><strong>Situación :</strong></h5>
+                    <p class="list-group-item-text"> ALUMNO REGULAR
+                    </p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    <h5 class="list-group-item-heading"><strong>Ciclo Relativo: </strong></h5>
+                    <p class="list-group-item-text"> 03</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-12 ref">
+            <div class="list-group list-group-01 lg-p">
+                <a class="list-group-item ">
+                    <button class="btn btn-especial1"><span class="glyphicon glyphicon-print curribtn1"> Imprimir</span></button>
+                    <button class="btn btn-especial2"><span class="glyphicon glyphicon-pencil curribtn2"> Solicitud de Reclamo</span></button>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>01 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BIC01</td>
+                                    <td>INTRODUCCION A LA COMPUTACION-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BMA01</td>
+                                    <td>CALCULO DIFERENCIAL-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BQU01</td>
+                                    <td>QUIMICA I-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BRC01</td>
+                                    <td>REDACCION Y COMUNICACION-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB101</td>
+                                    <td>GEOMETRIA ANALITICA-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI101</td>
+                                    <td>INTRODUCCION AL PENSAMIENTO Y A LA INGENIERIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>02 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BEF01</td>
+                                    <td>ETICA Y FILOSOFIA POLITICA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BMA02</td>
+                                    <td>CALCULO INTEGRAL-</td>
+                                    <td>5</td>
+                                    <td>BMA01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BMA03</td>
+                                    <td>ALGEBRA LINEAL-</td>
+                                    <td>4</td>
+                                    <td>FB101</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI201</td>
+                                    <td>PSICOLOGIA SISTEMICA-</td>
+                                    <td>3</td>
+                                    <td>SI101</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI203</td>
+                                    <td>TEORIA Y CIENCIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>SI101</td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>13.4</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI205</td>
+                                    <td>ALGORITMIA Y ESTRUCTURA DE DATOS-</td>
+                                    <td>3</td>
+                                    <td>BIC01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI207</td>
+                                    <td>SISTEMAS BIOLOGICOS Y ECOLOGICOS-</td>
+                                    <td>2</td>
+                                    <td>BMA01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>03 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BFI01</td>
+                                    <td>FISICA I-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB301</td>
+                                    <td>MATEMATICA DISCRETA-</td>
+                                    <td>3</td>
+                                    <td>BMA03</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB303</td>
+                                    <td>CALCULO MULTIVARIABLE-</td>
+                                    <td>5</td>
+                                    <td>BMA02</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB305</td>
+                                    <td>ESTADISTICA Y PROBABILIDADES-</td>
+                                    <td>3</td>
+                                    <td>BMA02</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU301</td>
+                                    <td>METODOLOGIA DE LA INVESTIGACION-</td>
+                                    <td>2</td>
+                                    <td>BRC01 SI203</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI301</td>
+                                    <td>TEORIA Y CIENCIA DE SISTEMAS APLICADA-</td>
+                                    <td>2</td>
+                                    <td>SI201 SI203</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI302</td>
+                                    <td>PROGRAMACION ORIENTADA A OBJETOS-</td>
+                                    <td>3</td>
+                                    <td>SI205</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>04 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FB401</td>
+                                    <td>FISICA II-</td>
+                                    <td>5</td>
+                                    <td>BFI01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB402</td>
+                                    <td>CALCULO NUMERICO-</td>
+                                    <td>3</td>
+                                    <td>FB301</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB403</td>
+                                    <td>ECUACIONES DIFERENCIALES-</td>
+                                    <td>5</td>
+                                    <td>FB303</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB405</td>
+                                    <td>ESTADISTICA APLICADA-</td>
+                                    <td>3</td>
+                                    <td>FB305</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU102</td>
+                                    <td>DESARROLLO PERSONAL-</td>
+                                    <td>2</td>
+                                    <td>BEF01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI403</td>
+                                    <td>METODOLOGIA DE LOS SISTEMAS BLANDOS-</td>
+                                    <td>3</td>
+                                    <td>HU301 SI301</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI405</td>
+                                    <td>MODELADO CONCEPTUAL DE DATOS-</td>
+                                    <td>3</td>
+                                    <td>SI302</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>05 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BEG01</td>
+                                    <td>ECONOMIA GENERAL-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>BRN01</td>
+                                    <td>REALIDAD NACIONAL, CONSTITUCION Y DERECHOS HUMANOS-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>FB501</td>
+                                    <td>MATEMATICA APLICADA-</td>
+                                    <td>3</td>
+                                    <td>FB402</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE501</td>
+                                    <td>TEORIA ORGANIZACIONAL-</td>
+                                    <td>3</td>
+                                    <td>FB405</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI501</td>
+                                    <td>INVESTIGACION DE OPERACIONES I-</td>
+                                    <td>3</td>
+                                    <td>FB405</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI503</td>
+                                    <td>INGENIERIA DE PROCESOS-</td>
+                                    <td>3</td>
+                                    <td>SI301</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI505</td>
+                                    <td>DISEÑO DE BASE DE DATOS-</td>
+                                    <td>3</td>
+                                    <td>SI405</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>06 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GE605</td>
+                                    <td>SISTEMA Y GESTION FINANCIERA-</td>
+                                    <td>3</td>
+                                    <td>BEG01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI601</td>
+                                    <td>INVESTIGACION DE OPERACIONES II-</td>
+                                    <td>3</td>
+                                    <td>SI501</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI602</td>
+                                    <td>DINAMICA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>FB403</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI603</td>
+                                    <td>MODELADO DE PROCESOS DE CICLO DE VIDA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>FSI503</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI604</td>
+                                    <td>ANALISIS Y DISEÑO DE SISTEMAS-</td>
+                                    <td>4</td>
+                                    <td>FB501 SI403</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI605</td>
+                                    <td>ARQUITECTURA EMPRESARIAL-</td>
+                                    <td>3</td>
+                                    <td>GE501 SI503</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI607</td>
+                                    <td>ARQUITECTURA COMPUTACIONAL Y REDES-</td>
+                                    <td>3</td>
+                                    <td>SI505</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>07 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GE703</td>
+                                    <td>SISTEMAS INTEGRADOS EMPRESARIALES-</td>
+                                    <td>3</td>
+                                    <td>GE605</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE709</td>
+                                    <td>SISTEMAS DE CALIDAD-</td>
+                                    <td>SI603</td>
+                                    <td>FB301</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI701</td>
+                                    <td>MODELADO SISTEMICO Y SIMULACION-</td>
+                                    <td>3</td>
+                                    <td>SI601</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI702</td>
+                                    <td>TALLER DE DINAMICA DE SISTEMAS-</td>
+                                    <td>2</td>
+                                    <td>SI602</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI704</td>
+                                    <td>GESTION DE LA INGENIERIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>GE501 SI503</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI705</td>
+                                    <td>ESTANDARES DE LA INGENIERIA DE SISTEMAS-</td>
+                                    <td>2</td>
+                                    <td>SI604</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI707</td>
+                                    <td>INGENIERIA DE SOFTWARE-</td>
+                                    <td>3</td>
+                                    <td>SI607</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>08 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GE801</td>
+                                    <td>PLANEAMIENTO Y GESTION ESTRATEGICA-</td>
+                                    <td>3</td>
+                                    <td>GE709</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE803</td>
+                                    <td>SISTEMAS ANALITICOS-</td>
+                                    <td>2</td>
+                                    <td>GE703</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI801</td>
+                                    <td>MODELO DEL SISTEMA VIABLE-</td>
+                                    <td>3</td>
+                                    <td>GE501 GE709</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI805</td>
+                                    <td>INTEGRACION DE SISTEMAS-</td>
+                                    <td>2</td>
+                                    <td>SI704 SI705</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI806</td>
+                                    <td>DESARROLLO ADAPTATIVO E INTEGRADO DEL SW-</td>
+                                    <td>2</td>
+                                    <td>SI707</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI807</td>
+                                    <td>SISTEMAS DE INTELIGENCIA DE NEGOCIO-</td>
+                                    <td>3</td>
+                                    <td>SI701 SI702</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>09 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GE902</td>
+                                    <td>DISEÑO Y EVALUACION DE PROYECTOS-</td>
+                                    <td>3</td>
+                                    <td>GE801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI901</td>
+                                    <td>PROYECTO DE TESIS EN INGENIERIA SISTEMAS I-</td>
+                                    <td>2</td>
+                                    <td>SI807</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI902</td>
+                                    <td>INGENIERIA DE SISTEMAS DE SERVICIO-</td>
+                                    <td>3</td>
+                                    <td>GE801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI903</td>
+                                    <td>IMPLEMENTACION DE SISTEMAS-</td>
+                                    <td>2</td>
+                                    <td>GE803 SI805</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI904</td>
+                                    <td>SEGURIDAD DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>SI805</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>10 CICLO</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HU200</td>
+                                    <td>IDIOMA EXTRANJERO-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU300</td>
+                                    <td>ACTIVIDADES DIVERSAS I-</td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU400</td>
+                                    <td>PRACTICAS PRE-PROFESIONALES II-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI035</td>
+                                    <td>PROYECTO DE TESIS EN INGENIERIA SISTEMAS II-</td>
+                                    <td>2</td>
+                                    <td>SI901</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI055</td>
+                                    <td>GESTION DE PROYECTOS-</td>
+                                    <td>2</td>
+                                    <td>GE902</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI075</td>
+                                    <td>AUDITORIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>SI904</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI085</td>
+                                    <td>APLICACION DE NEGOCIOS ELECTRONICOS-</td>
+                                    <td>3</td>
+                                    <td>SI801 SI902</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI095</td>
+                                    <td>INGENIERIA EMPRESARIAL-</td>
+                                    <td>3</td>
+                                    <td>SI801 SI902</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>CURSOS ELECTIVOS</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GE112</td>
+                                    <td>TEORIA DE JUEGOS Y LA NEGOCIACION-</td>
+                                    <td>3</td>
+                                    <td>SI601</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE120</td>
+                                    <td>MODELOS PROBABILISTICOS Y ANALISIS DE RIESGOS-</td>
+                                    <td>3</td>
+                                    <td>GE803</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE130</td>
+                                    <td>GESTION DE NEGOCIOS Y ESTRATEGIA EMPRESARIAL-</td>
+                                    <td>3</td>
+                                    <td>GE801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE805</td>
+                                    <td>MERCADOTECNIA-</td>
+                                    <td>3</td>
+                                    <td>GE801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE903</td>
+                                    <td>GESTION DEL TALENTO HUMANO-</td>
+                                    <td>3</td>
+                                    <td>HU102</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU112</td>
+                                    <td>COMPORTAMIENTO ORGANIZACIONAL</td>
+                                    <td>2</td>
+                                    <td>GE501</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI077</td>
+                                    <td>INTELIGENCIA ARTIFICIAL-</td>
+                                    <td>3</td>
+                                    <td>SI701</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI105</td>
+                                    <td>DISEÑO DE PORTALES Y DESARROLLO WEB-</td>
+                                    <td>3</td>
+                                    <td>GE703</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI107</td>
+                                    <td>SEMIOTICA-</td>
+                                    <td>2</td>
+                                    <td>BRC01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI109</td>
+                                    <td>GESTION DEL CICLO DE VIDA EN EL DESARROLLO DEL SOFTWARE-</td>
+                                    <td>3</td>
+                                    <td>SI707</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI115</td>
+                                    <td>GESTION DE COMUNIDADES Y REDES SOCIALES-</td>
+                                    <td>2</td>
+                                    <td>SI806 SI807</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI116</td>
+                                    <td>GESTION DE LA CONFIGURACION DE SISTEMAS DE INFORMACION-</td>
+                                    <td>3</td>
+                                    <td>GE703</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI117</td>
+                                    <td>INGENIERIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td>SI801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI118</td>
+                                    <td>TEORIA DE LA COMPLEJIDAD-</td>
+                                    <td>3</td>
+                                    <td>SI701</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI119</td>
+                                    <td>TALLER DE DISEÑO DE SISTEMAS INTELIGENTES-</td>
+                                    <td>2</td>
+                                    <td>SI807</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI122</td>
+                                    <td>CIBERNETICA Y TEORIA DE CONTROL-</td>
+                                    <td>3</td>
+                                    <td>SI801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI126</td>
+                                    <td>VERIFICACION Y VALIDACION DE SISTEMAS-</td>
+                                    <td>2</td>
+                                    <td>GE709</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI127</td>
+                                    <td>DISEÑO GRAFICO E ICONOGRAFICO-</td>
+                                    <td>2</td>
+                                    <td>SI302</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI130</td>
+                                    <td>GESTION DE LA INFORMACION-</td>
+                                    <td>3</td>
+                                    <td>SI503</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI135</td>
+                                    <td>INTERCAMBIO ELECTRONICO DE DATOS E INTEROPERABILIDAD-</td>
+                                    <td>3</td>
+                                    <td>SI603</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI140</td>
+                                    <td>GESTION DEL CONOCIMIENTO-</td>
+                                    <td>3</td>
+                                    <td>SI807</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI150</td>
+                                    <td>ANALITICA DE DATOS-</td>
+                                    <td>3</td>
+                                    <td>FB405</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI155</td>
+                                    <td>CIBERSEGURIDAD-</td>
+                                    <td>3</td>
+                                    <td>SI904</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI180</td>
+                                    <td>MODELO PARAMETRICO DE DATOS-</td>
+                                    <td>3</td>
+                                    <td>SI405</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>TE111</td>
+                                    <td>INNOVACION Y GESTION TECNOLOGICA-</td>
+                                    <td>3</td>
+                                    <td>SI604</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>CURSOS ELECTIVOS COMPLEMENTARIOS</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FB111</td>
+                                    <td>FISICA MODERNA-</td>
+                                    <td>0</td>
+                                    <td>FB401</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE124</td>
+                                    <td>COMERCIO INTERNACIONAL-</td>
+                                    <td>3</td>
+                                    <td>GE801</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE702</td>
+                                    <td>INGENIERIA ECONOMICA-</td>
+                                    <td>3</td>
+                                    <td>BEG01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>GE704</td>
+                                    <td>CONTABILIDAD DE COSTOS Y PRESUPUESTOS-</td>
+                                    <td>3</td>
+                                    <td>GE605</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU111</td>
+                                    <td>LEGISLACION EMPRESARIAL Y TRIBUTARIA-</td>
+                                    <td>2</td>
+                                    <td>BRN01</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HU201</td>
+                                    <td>SOCIOLOGIA-</td>
+                                    <td>2</td>
+                                    <td>HU102</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>SI111</td>
+                                    <td>TEORIA DE DECISIONES-</td>
+                                    <td>3</td>
+                                    <td>SI601</td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>TE101</td>
+                                    <td>DIBUJO DE INGENIERIA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>**</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading bg-white">
+                    <h4><strong>CURSOS ELECTIVOS COMPLEMENTARIOS</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Curso</th>
+                                    <th>Cred</th>
+                                    <th>Pre Requisitos</th>
+                                    <th>Facultad</th>
+                                    <th>Periodo</th>
+                                    <th>Nota</th>
+                                    <th>Veces</th>
+                                    <th>Matriculado</th>
+                                    <th>Observación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CB101</td>
+                                    <td>GEOMETRIA ANALITICA-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>11.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB111</td>
+                                    <td>ALGEBRA LINEAL-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>12.4</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB112</td>
+                                    <td>MATEMATICA DISCRETA-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>11.1</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB121</td>
+                                    <td>CALCULO DIFERENCIAL-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>13.4</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB131</td>
+                                    <td>CALCULO INTEGRAL-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>17.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB132</td>
+                                    <td>CALCULO MULTIVARIABLE-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>10.5</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB201</td>
+                                    <td>QUIMICA GENERAL-</td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>10.7</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB302</td>
+                                    <td>FISICA I-</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>10.9</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>CB402</td>
+                                    <td>ESTADISTICA Y PROBABILIDADES-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>10.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS101</td>
+                                    <td>METODOLOGIA DE LA INVESTIGACION-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>10.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS111</td>
+                                    <td>LEGISLACION EMPRESARIAL Y TRIBUTARIA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>14.9</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS121</td>
+                                    <td>METODOLOGIA DE LA INVESTIGACION CIENTIFICA-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>10.5</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS131</td>
+                                    <td>SOCIOLOGIA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>13.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS141</td>
+                                    <td>FILOSOFIA Y ETICA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>15.1</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>HS201</td>
+                                    <td>SOCIOLOGIA-</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>16.0</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ST101</td>
+                                    <td>INTRODUCCION A LA INGENIERIA DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>12.2</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ST103</td>
+                                    <td>TEORIA GENERAL DE SISTEMAS-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>06.4</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td>DESAPROBADO</td>
+                                </tr>
+                                <tr>
+                                    <td>ST202</td>
+                                    <td>LENGUAJES DE PROGRAMACION ESTRUCTURADO-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>182</td>
+                                    <td>15.3</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>ST221</td>
+                                    <td>ALGORITMOS Y ESTRUCTURA DE DATOS-</td>
+                                    <td>3</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>181</td>
+                                    <td>11.0</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>TP301</td>
+                                    <td>FISICO QUIMICA Y OPERACIONES UNITARIAS-</td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td>I</td>
+                                    <td>172</td>
+                                    <td>10.8</td>
+                                    <td>1</td>
+                                    <td>N</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                <strong>NOTAS DEL 182</strong>
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples8"
+                    aria-expanded="false" aria-controls="collapseExamples8">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">PROMEDIO PONDERADO<span class="badge pull-right">11.829</span></a>
+                                <a class="list-group-item">N° CREDITOS LLEVADOS<span class="badge pull-right">24</span></a>
+                                <a class="list-group-item">N° CREDITOS APROBADOS<span class="badge pull-right">24</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                <strong>ACUMULADO AL 182</strong>
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples9"
+                    aria-expanded="false" aria-controls="collapseExamples9">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+            <div class="collapse in" id="collapseExamples9">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">PROMEDIO PONDERADO ACUMULADO<span class="badge pull-right">12.228</span></a>
+                                <a class="list-group-item">CREDITOS LLEVADOS APROBADOS ACUMULADOS<span class="badge pull-right">65</span></a>
+                                <a class="list-group-item">CREDITOS LLEVADOS<span class="badge pull-right">68</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                <strong>DE LA CARRERA</strong>
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples10"
+                    aria-expanded="false" aria-controls="collapseExamples10">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+            <div class="collapse in" id="collapseExamples10">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">NUMERO MINIMO DE CREDITOS OBLIGATORIOS<span class="badge pull-right">192</span></a>
+                                <a class="list-group-item">NUMERO MINIMO DE CREDITOS ELECTIVOS<span class="badge pull-right">15</span></a>
+                                <a class="list-group-item">NUMERO MAXIMO DE CREDITOS COMPLEMENTARIOS<span class="badge pull-right">0</span></a>
+                                <a class="list-group-item">NUMERO MAXIMO DE CREDITOS POR OTRAS ACTIVIDADES DIVERSAS<span class="badge pull-right">0</span></a>
+                                <a class="list-group-item">NUMERO DE CREDITOS TOTALES<span class="badge pull-right">207</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block btn-orce back-to">2014 © ORCE<span class="glyphicon glyphicon-chevron-up"></span></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

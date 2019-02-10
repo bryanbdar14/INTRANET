@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORCE | Ficha Académica Depurada</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand icon-hamburger" href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger" title="Toggle Navigation" data-placement="right" data-toggle="tooltip" id="triple"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html"><span class="text-black">INTRANET</span> <span class="text-danger text-danger-02">ALUMNOS</span></a>
+                    <a class="navbar-brand icon-bell" data-toggle="popover" title="" data-placement="bottom" data-content="<div> <i class='far fa-bell amarillo'></i> Se actualizo la intranet<small class='bell-left'>24/07</small></div>" data-html="true"> <span class="glyphicon glyphicon-bell"></span></a>
+                </div>
+                <ul class=" pull-right">
+                    <li class="dropdown menudrop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNTExMzUzOF5BMl5BanBnXkFtZTgwOTI1MjA3OTE@._V1_UX172_CR0,0,172,256_AL_.jpg" class="img-circle" height="30" width="30"> Bryan Arrivasplata <span class="caret caret1"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="" role="group" aria-label="...">
+                                    <a href='nota.html'><button type="button" class="btn btn-especial"><span class="fas fa-pencil-alt celeste"></span><br>Notas</button></a>
+                                    <a href='clave.html'><button type="button" class="btn btn-especial"><span class="fas fa-key celeste"></span><br>Cambiar Clave</button></a>
+                                    <a href='datos_personales.html'><button type="button" class="btn btn-especial"><span class="fas fa-user celeste"></span><br>vCard</button></a>
+                                </div>    
+                            </li>
+                            <li>
+                                <a class="modify" href='index.html'><button type="button" class="btn btn-block btn-especial-verde"><span class="fas fa-sign-out-alt blanco"></span><br><span class="blanco">Cerrar Sesión</span></button></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <ul class="menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Ficha de Usuario <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='datos_personales.html'><span>Datos Personales</span></a></li>
+                    <li><a href='clave.html'><span>Cambio de Clave</span></a></li>
+                    <li><a href='#'><span>Vincular Facebook</span></a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Informacion Academica <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='avance_curricular.html'><span>Avance Curricular</span></a></li>
+                    <li ><a href='ficha_academica.html'><span>Ficha Academica</span></a></li>
+                    <li class="active"><a href='ficha_academica_depurada.html'><span>Ficha Academica Depurada</span></a></li>
+                    <li><a href='hoja_no_adeudo.html'><span>Hoja de no Adeudo</span></a></li>
+                    <li><a href='rendimiento_periodo.html'><span>Rendimiento por Periodo</span></a></li>
+                    <li><a href='matricula_horario.html'><span>Matricula y Horario</span></a></li>
+                    <li><a href='reporte_asistencia.html'><span>Reporte de Asistencia</span></a></li>
+                    <li><a href='nota.html'><span>Mis Notas a la Fecha</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> Mis Tramites <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='carnet.html'><span>Carné Universitario</span></a></li>
+                </ul>
+            </li>
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion </a></li>
+        </ul>
+    </section>
+    <div class="content">
+        <div class="col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Alumno </a></li>
+                <li class="active">Ficha Académica Depurada</li>
+            </ol>
+        </div>
+        <div class="col-lg-12 ref">
+            <div class="list-group list-group-01 lg-p">
+                <div class="header-alumno list-active">
+                    Datos del Alumno
+                    <button class="btn  pull-right collapsed alumno-collapse" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                    </button>
+                </div>
+                <div class="collapse in nombre-alumno list-active_second" id="collapseExample" aria-expanded="true">
+                    <h4>Arrivasplata Rojas,</h4>
+                    <h4>Bryan Daniell</h4>
+                </div>
+
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-barcode"></span>
+                    <h5 class="list-group-item-heading"><strong>Código UNI :</strong></h5>
+                    <p class="list-group-item-text"> 20172657B</p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    <h5 class="list-group-item-heading"><strong>Facultad : </strong></h5>
+                    <p class="list-group-item-text"> INGENIERIA INDUSTRIAL Y DE SISTEMAS (FIIS)</p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-briefcase"></span>
+                    <h5 class="list-group-item-heading"><strong>Especialidad : </strong></h5>
+                    <p class="list-group-item-text"> INGENIERÍA DE SISTEMAS (I2)
+                    </p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-pushpin"></span>
+                    <h5 class="list-group-item-heading"><strong>Situación :</strong></h5>
+                    <p class="list-group-item-text"> ALUMNO REGULAR
+                    </p>
+                </a>
+                <a href="#" class="list-group-item ">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    <h5 class="list-group-item-heading"><strong>Ciclo Relativo: </strong></h5>
+                    <p class="list-group-item-text"> 03</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-12 ref">
+            <div class="list-group list-group-01 lg-p">
+                <a class="list-group-item ">
+                    <p>SELECCIONA PERIODO</p>
+                    <button class="btn btn-success bg-w">IR A<span class="caret"></span></button>
+                    <button class="btn btn-especial1 pull-right"><span class="glyphicon glyphicon-print curribtn1"> Imprimir</span></button>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                    Periodo 20172
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples2"
+                    aria-expanded="false" aria-controls="collapseExamples2">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples2">
+                <div class="panel panel-default">
+                    <div Class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-advance">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Curso</th>
+                                        <th>Secc</th>
+                                        <th>Tipo</th>
+                                        <th>Créd</th>
+                                        <th>Nota</th>
+                                        <th>Sit</th>
+                                        <th>Cond</th>
+                                        <th>Equivalentes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CB121</td>
+                                        <td>CALCULO DIFERENCIAL-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>5</td>
+                                        <td>13.4</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB201</td>
+                                        <td>QUIMICA GENERAL-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>4</td>
+                                        <td>10.7</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS101</td>
+                                        <td>DESARROLLO PERSONAL-</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                        <td>2</td>
+                                        <td>10.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS111</td>
+                                        <td>TECNICAS DE COMUNICACION-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>14.9</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST101</td>
+                                        <td>INTRODUCCION A LA INGENIERIA DE SISTEMAS-</td>
+                                        <td>V</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>12.2</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TP301</td>
+                                        <td>DIBUJO DE INGENIERIA-</td>
+                                        <td>Y</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>10.8</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB101</td>
+                                        <td>GEOMETRIA ANALITICA-</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>11.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">Prom Pond del Ciclo 172<span class="badge pull-right">12.087</span></a>
+                                <a class="list-group-item">Prom Pond al Ciclo 172<span class="badge pull-right">12.087</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Periodo 20181
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples3"
+                    aria-expanded="false" aria-controls="collapseExamples3">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+            <div class="collapse in" id="collapseExamples3">
+                <div class="panel panel-default">
+                    <div Class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-advance">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Curso</th>
+                                        <th>Secc</th>
+                                        <th>Tipo</th>
+                                        <th>Créd</th>
+                                        <th>Nota</th>
+                                        <th>Sit</th>
+                                        <th>Cond</th>
+                                        <th>Equivalentes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CB111</td>
+                                        <td>ALGEBRA LINEAL-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>12.4</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB131</td>
+                                        <td>CALCULO INTEGRAL-</td>
+                                        <td>V</td>
+                                        <td>O</td>
+                                        <td>5</td>
+                                        <td>17.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS121</td>
+                                        <td>METODOLOGIA DE LA INVESTIGACION CIENTIFICA-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>10.5</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS141</td>
+                                        <td>FILOSOFIA Y ETICA-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>2</td>
+                                        <td>15.1</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS201</td>
+                                        <td>CONSTITUCION Y DERECHOS HUMANOS-</td>
+                                        <td>V</td>
+                                        <td>O</td>
+                                        <td>2</td>
+                                        <td>16</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST221</td>
+                                        <td>ALGORITMOS Y ESTRUCTURA DE DATOS-</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>11</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">Prom Pond del Ciclo 181<span class="badge pull-right">13.911</span></a>
+                                <a class="list-group-item">Prom Pond al Ciclo 181<span class="badge pull-right">12.888</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Periodo 20182
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples4"
+                    aria-expanded="false" aria-controls="collapseExamples4">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples4">
+                <div class="panel panel-default">
+                    <div Class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-advance">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Curso</th>
+                                        <th>Secc</th>
+                                        <th>Tipo</th>
+                                        <th>Créd</th>
+                                        <th>Nota</th>
+                                        <th>Sit</th>
+                                        <th>Cond</th>
+                                        <th>Equivalentes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CB132</td>
+                                        <td>CALCULO MULTIVARIABLE-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>5</td>
+                                        <td>10.5</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB112</td>
+                                        <td>MATEMATICA DISCRETA-</td>
+                                        <td>V</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>11.1</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB302</td>
+                                        <td>FISICA I-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>5</td>
+                                        <td>10.9</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB402</td>
+                                        <td>ESTADISTICA Y PROBABILIDADES-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>10.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS131</td>
+                                        <td>SOCIOLOGIA-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>2</td>
+                                        <td>13.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>SI203</td>
+                                        <td>TEORIA Y CIENCIA DE SISTEMAS-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>13.4</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST202</td>
+                                        <td>LENGUAJES DE PROGRAMACION ESTRUCTURADO-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>15.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">Prom Pond del Ciclo 182<span class="badge pull-right">11.829</span></a>
+                                <a class="list-group-item">Prom Pond al Ciclo 182<span class="badge pull-right">12.497</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-primary btn-lg btn-block btn-orce back-to">2014 © ORCE<span class="glyphicon glyphicon-chevron-up"></span></button>
+        </div>
+    </div>
+    <!--
+-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
+<!--<div class="panel panel-default">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-advance">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Curso</th>
+                                        <th>Secc</th>
+                                        <th>Tipo</th>
+                                        <th>Créd</th>
+                                        <th>Nota</th>
+                                        <th>Sit</th>
+                                        <th>Cond</th>
+                                        <th>Equivalentes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>CB121</td>
+                                        <td>CALCULO DIFERENCIAL-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>5</td>
+                                        <td>13.4</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB201</td>
+                                        <td>QUIMICA GENERAL-</td>
+                                        <td>U</td>
+                                        <td>O</td>
+                                        <td>4</td>
+                                        <td>10.7</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS101</td>
+                                        <td>DESARROLLO PERSONAL-</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                        <td>2</td>
+                                        <td>10.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HS111</td>
+                                        <td>TECNICAS DE COMUNICACION-</td>
+                                        <td>W</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>14.9</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ST101</td>
+                                        <td>INTRODUCCION A LA INGENIERIA DE SISTEMAS-</td>
+                                        <td>V</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>12.2</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TP301</td>
+                                        <td>DIBUJO DE INGENIERIA-</td>
+                                        <td>Y</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>10.8</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CB101</td>
+                                        <td>GEOMETRIA ANALITICA-</td>
+                                        <td>X</td>
+                                        <td>O</td>
+                                        <td>3</td>
+                                        <td>11.3</td>
+                                        <td>A</td>
+                                        <td>N</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="list-group">
+                                <a class="list-group-item">Cred Curr Llevados<span class="badge pull-right">23</span></a>
+                                <a class="list-group-item">Cred Curr Aprobados<span class="badge pull-right">23</span></a>
+                                <a class="list-group-item">Prom Pond del Ciclo 172<span class="badge pull-right">12.087</span></a>
+                                <a class="list-group-item">Prom Pond al Ciclo 172<span class="badge pull-right">12.087</span></a>
+                                <a class="list-group-item">Cred Curr Llevados<span class="badge pull-right">0</span></a>
+                                <a class="list-group-item">Cred Curr Aprobados<span class="badge pull-right">0</span></a>
+                                <a class="list-group-item">Cred Llevados<span class="badge pull-right">23</span></a>
+                                <a class="list-group-item">Cred Retirados<span class="badge pull-right">0</span></a>
+                            </div>
+                        </div>
+                    </div>-->

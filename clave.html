@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORCE | Cambio de Clave</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand icon-hamburger" href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger" title="Toggle Navigation" data-placement="right" data-toggle="tooltip" id="triple"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html"><span class="text-black">INTRANET</span> <span class="text-danger text-danger-02">ALUMNOS</span></a>
+                    <a class="navbar-brand icon-bell" data-toggle="popover" title="" data-placement="bottom" data-content="<div> <i class='far fa-bell amarillo'></i> Se actualizo la intranet<small class='bell-left'>24/07</small></div>" data-html="true"> <span class="glyphicon glyphicon-bell"></span></a>
+                </div>
+                <ul class=" pull-right">
+                    <li class="dropdown menudrop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNTExMzUzOF5BMl5BanBnXkFtZTgwOTI1MjA3OTE@._V1_UX172_CR0,0,172,256_AL_.jpg" class="img-circle" height="30" width="30"> Bryan Arrivasplata <span class="caret caret1"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="" role="group" aria-label="...">
+                                    <a href='nota.html'><button type="button" class="btn btn-especial"><span class="fas fa-pencil-alt celeste"></span><br>Notas</button></a>
+                                    <a href='clave.html'><button type="button" class="btn btn-especial"><span class="fas fa-key celeste"></span><br>Cambiar Clave</button></a>
+                                    <a href='datos_personales.html'><button type="button" class="btn btn-especial"><span class="fas fa-user celeste"></span><br>vCard</button></a>
+                                </div>    
+                            </li>
+                            <li>
+                                <a class="modify" href='index.html'><button type="button" class="btn btn-block btn-especial-verde"><span class="fas fa-sign-out-alt blanco"></span><br><span class="blanco">Cerrar Sesión</span></button></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <ul class="menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Ficha de Usuario <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='datos_personales.html'><span>Datos Personales</span></a></li>
+                    <li class="active"><a href='clave.html'><span>Cambio de Clave</span></a></li>
+                    <li><a href='#'><span>Vincular Facebook</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Informacion Academica <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='avance_curricular.html'><span>Avance Curricular</span></a></li>
+                    <li><a href='ficha_academica.html'><span>Ficha Academica</span></a></li>
+                    <li><a href='ficha_academica_depurada.html'><span>Ficha Academica Depurada</span></a></li>
+                    <li><a href='hoja_no_adeudo.html'><span>Hoja de no Adeudo</span></a></li>
+                    <li><a href='rendimiento_periodo.html'><span>Rendimiento por Periodo</span></a></li>
+                    <li><a href='matricula_horario.html'><span>Matricula y Horario</span></a></li>
+                    <li><a href='reporte_asistencia.html'><span>Reporte de Asistencia</span></a></li>
+                    <li><a href='nota.html'><span>Mis Notas a la Fecha</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> Mis Tramites <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='carnet.html'><span>Carné Universitario</span></a></li>
+                </ul>
+            </li>
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion </a></li>
+        </ul>
+    </section>
+    <div class="content">
+        <div class="col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Alumno </a></li>
+                <li class="active"> Cambio de Clave</li>
+            </ol>
+        </div>
+        <div class="col-lg-6 mb-1">
+            <header class=" list-active">
+                Cambio de Clave
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples"
+                    aria-expanded="false" aria-controls="collapseExamples">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <form class="form-horizontal">
+                                <!--Esto ara que el formulario sea dos columnas una fila-->
+                                <div class="form-group">
+                                    <label class="col-sm-4">Clave Actual</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4">Nueva Clave</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4">Confirmar Clave</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" value="">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Cambiar Clave</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-primary  btn-lg btn-block btn-orce back-to">2014 © ORCE<span class="glyphicon glyphicon-chevron-up"></span></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

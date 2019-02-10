@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ORCE | Datos Personales</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand icon-hamburger" href="#">
+                        <span class="glyphicon glyphicon-menu-hamburger" title="Toggle Navigation" data-placement="right" data-toggle="tooltip" id="triple"></span>
+                    </a>
+                    <a class="navbar-brand" href="index.html"><span class="text-black">INTRANET</span> <span class="text-danger text-danger-02">ALUMNOS</span></a>
+                    <a class="navbar-brand icon-bell" data-toggle="popover" title="" data-placement="bottom" data-content="<div> <i class='far fa-bell amarillo'></i> Se actualizo la intranet<small class='bell-left'>24/07</small></div>" data-html="true"> <span class="glyphicon glyphicon-bell"></span></a>
+                </div>
+                <ul class=" pull-right">
+                    <li class="dropdown menudrop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNTExMzUzOF5BMl5BanBnXkFtZTgwOTI1MjA3OTE@._V1_UX172_CR0,0,172,256_AL_.jpg" class="img-circle" height="30" width="30"> Bryan Arrivasplata <span class="caret caret1"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="" role="group" aria-label="...">
+                                    <a href='nota.html'><button type="button" class="btn btn-especial"><span class="fas fa-pencil-alt celeste"></span><br>Notas</button></a>
+                                    <a href='clave.html'><button type="button" class="btn btn-especial"><span class="fas fa-key celeste"></span><br>Cambiar Clave</button></a>
+                                    <a href='datos_personales.html'><button type="button" class="btn btn-especial"><span class="fas fa-user celeste"></span><br>vCard</button></a>
+                                </div>    
+                            </li>
+                            <li>
+                                <a class="modify" href='index.html'><button type="button" class="btn btn-block btn-especial-verde"><span class="fas fa-sign-out-alt blanco"></span><br><span class="blanco">Cerrar Sesión</span></button></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <ul class="menu">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio </a></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Ficha de Usuario <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li class="active"><a href='datos_personales.html'><span>Datos Personales</span></a></li>
+                    <li><a href='clave.html'><span>Cambio de Clave</span></a></li>
+                    <li><a href='#'><span>Vincular Facebook</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Informacion Academica <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='avance_curricular.html'><span>Avance Curricular</span></a></li>
+                    <li><a href='ficha_academica.html'><span>Ficha Academica</span></a></li>
+                    <li><a href='ficha_academica_depurada.html'><span>Ficha Academica Depurada</span></a></li>
+                    <li><a href='hoja_no_adeudo.html'><span>Hoja de no Adeudo</span></a></li>
+                    <li><a href='rendimiento_periodo.html'><span>Rendimiento por Periodo</span></a></li>
+                    <li><a href='matricula_horario.html'><span>Matricula y Horario</span></a></li>
+                    <li><a href='reporte_asistencia.html'><span>Reporte de Asistencia</span></a></li>
+                    <li><a href='nota.html'><span>Mis Notas a la Fecha</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><span class="glyphicon glyphicon-folder-open"></span> Mis Tramites <i class="pull-right">&#43</i></a>
+                <ul>
+                    <li><a href='carnet.html'><span>Carné Universitario</span></a></li>
+                </ul>
+            </li>
+            <li class="activado"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesion </a></li>
+        </ul>
+    </section>
+    <div class="content">
+        <div class="col-lg-12">
+            <ol class="breadcrumb">
+                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Alumno </a></li>
+                <li class="active"> Datos Personales</li>
+            </ol>
+        </div>
+        <div class="col-lg-6 mb-1">
+            <header class=" list-active">
+                Datos Generales
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples"
+                    aria-expanded="false" aria-controls="collapseExamples">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <form class="form-horizontal">
+                                <!--Esto ara que el formulario sea dos columnas una fila-->
+                                <div class="form-group">
+                                    <label class="col-sm-2">Nombre</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="ARRIVASPLATA-ROJAS-BRYAN DANIELL"
+                                            disabled="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Facultad</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="INGENIERIA INDUSTRIAL Y DE SISTEMAS"
+                                            disabled="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Código UNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" value="20172657B" disabled="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">E-Mail UNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" value="" disabled="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">E-Mail Alternativo</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" value="bryan_bdar14@hotmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">DNI</label>
+                                    <div class="col-sm-10">
+                                        <input type="number" class="form-control" value="70174828">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4">Fecha de Nacimiento</label>
+                                    <div class="col-sm-4">
+                                        <input type="date" class="form-control" value="1999-02-15">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2">Sexo</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control">
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                        <button class="btn btn-danger bg-rojo"><span class="glyphicon glyphicon-print"></span> Imprimir
+                            esta
+                            ficha</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mb-1">
+            <header class=" list-active">
+                Imagen DNI
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples1"
+                    aria-expanded="false" aria-controls="collapseExamples1">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples1">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row  collap-content">
+                            <div class="col-lg-12 ">
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>Atención:
+                                    </strong>
+                                    Si no vizualiza su DNI cargado recientemente presione<strong>Ctrl + F5
+                                    </strong>
+                                </div>
+                                <div class="alert alert-info" role="alert">
+                                    <strong> Atención:</strong>
+                                    Cargue las imágenes de ambas caras del DNI vigente. Solo se permite archivos
+                                    jpg/jpeg
+                                    con peso menor a 500Kb SE DESCARTARA LA IMAGEN MAL ESCANEADA. LA IMAGEN NO DEBE
+                                    TENER
+                                    ESPACIOS SOBRANTES. Luego de subir la imagen podrá recortarla.
+
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mb-1">
+                                <div class="col-lg-2 ">
+                                    Imagen<br>Delantera
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <img src="http://www.academico.uni.edu.pe/intranet/public/_alumno/dni/0c27137bfb2d945e672d4ae5be8b4036.jpg"
+                                        class="img-responsive" alt="Responsive image">
+                                    <button class="btn btn-danger bg-rojo"><span class="glyphicon glyphicon-trash"></span>
+                                        Borrar</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 ">
+                                <div class="col-lg-2 ">
+                                    Imagen<br>Posterior
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <img src="http://www.academico.uni.edu.pe/intranet/public/_alumno/dni/0c27137bfb2d945e672d4ae5be8b4036-2.jpg?707796841"
+                                        class="img-responsive" alt="Responsive image">
+                                    <button class="btn btn-danger bg-rojo"><span class="glyphicon glyphicon-trash"></span>
+                                        Borrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Lugar de Nacimiento
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples2"
+                    aria-expanded="false" aria-controls="collapseExamples2">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples2">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4">Pais</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Perú</option>
+                                            <option>Venezuela</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4">Departamento</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Lima</option>
+                                            <option>Cajamarca</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4">Provincia</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Lima</option>
+                                            <option>Cañete</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4">Distrito</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Lima</option>
+                                            <option>Miraflores</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Domicilio
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples3"
+                    aria-expanded="false" aria-controls="collapseExamples3">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples3">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-2 col-md-2">
+                                <div class="form-group">
+                                    <label class="">Dirección</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima, 1">
+                                    <p class="text-center">Av. / Jr. / Calle / Psje.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" value="1406">
+                                    <p class="text-center">N° / Int.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima">
+                                    <p class="text-center">Mz. / lote / Urb.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <label class="col-lg-2 col-md-2">Departamento</label>
+                            <div class="col-lg-2 col-md-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-lg-1 col-md-1">Provincia</label>
+                            <div class="col-lg-2 col-md-2">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                            <label class="col-lg-1 col-md-1">Distrito</label>
+                            <div class="col-lg-4 col-md-4">
+                                <select class="form-control">
+                                    <option>Lima</option>
+                                    <option>Cañete</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="form-group">
+                                <label class="col-sm-1">Telefono</label>
+                                <div class="col-sm-2">
+                                    <input type="number" class="form-control" value="4235796">
+                                </div>
+                                <label class="col-sm-1">Celular</label>
+                                <div class="col-sm-2">
+                                    <input type="number" class="form-control" value="980501414">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Educacion Secundaria
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples4"
+                    aria-expanded="false" aria-controls="collapseExamples4">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples4">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="form-group">
+                                <label class="col-sm-1">Tipo</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control">
+                                        <option>Estatal</option>
+                                        <option>Particular</option>
+                                    </select>
+                                </div>
+                                <label class="col-sm-2">Nombre del Colegio</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" value="86239 NUESTRA SEÑORA DE GUADALUPE">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="form-group">
+                                <label class="col-sm-2">Departamento</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Cañete</option>
+                                    </select>
+                                </div>
+                                <label class="col-sm-1">Provincia</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Cañete</option>
+                                    </select>
+                                </div>
+                                <label class="col-sm-1">Distrito</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control">
+                                        <option>Lima</option>
+                                        <option>Cañete</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                Laboral
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples5"
+                    aria-expanded="false" aria-controls="collapseExamples5">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples5">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-3 col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones1">Menos de
+                                        S/. 1,000
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones11" value="opciones1">Entre
+                                        S/. 1,000 y S/. 3,000
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones12" value="opciones1">Mayor de
+                                        S/. 3,000
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-3 col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios1" id="opciones2" value="opciones2">Trabaja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios1" id="opciones21" value="opciones2" checked>No
+                                        Trabaja
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios1" id="opciones22" value="opciones6">Practicante
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-3 col-md-3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios2" id="opciones3" value="opciones3">Carrera
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-md-9">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios2" id="opciones31" value="opciones3" checked>Otros
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="form-group">
+                                <label class="col-sm-1">Ocupacion</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control">
+                                        <option>Ingeneria</option>
+                                        <option>Automotriz</option>
+                                        <option>Autos</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                DATOS DEL PADRE O APODERADO
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples6"
+                    aria-expanded="false" aria-controls="collapseExamples6">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+            <div class="collapse in" id="collapseExamples6">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Rojas">
+                                    <p class="text-center">Apellido Paterno</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Mayta">
+                                    <p class="text-center">Apellido Materno</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Ketty">
+                                    <p class="text-center">Nombres</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-2 col-md-2">
+                                <label>Parentesco:</label>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2" class="radios">Padre
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones1" value="opciones2" class="radios"
+                                            checked>Madre
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones3" value="opciones2" class="radios">Hermano(a)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="opciones-otro" value="opciones2">Otro
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <div>
+                                        <input type="text" class="form-control inputdisabled" value="" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <label class="col-sm-2">Telefono Fijo:</label>
+                            <div class="col-sm-2">
+                                <input type="number" class="form-control" value="980501414">
+                            </div>
+                            <label class="col-sm-1">Celular:</label>
+                            <div class="col-sm-2">
+                                <input type="number" class="form-control" value="980501414">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                            <div class="col-lg-2 col-md-2">
+                                <div class="form-group">
+                                    <label>Dirección actual del padre o apoderado:</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima, 1">
+                                    <p class="text-center">Av. / Jr. / Calle / Psje.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" value="1406">
+                                    <p class="text-center">N° / Int.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Jr_washington 1406 Cercado De Lima">
+                                    <p class="text-center">Mz. / lote / Urb.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 mb-1">
+            <header class=" list-active">
+                REFERENCIA
+                <button class="btn  pull-right" type="button" data-toggle="collapse" data-target="#collapseExamples7"
+                    aria-expanded="false" aria-controls="collapseExamples7">
+                    <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+                </button>
+            </header>
+
+            <div class="collapse in" id="collapseExamples7">
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <div class="row col-lg-12 collap-content">
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+                                    <label for="exampleInputEmail1">Apellidos y nombres</label>
+                                    <input type="text" class="form-control" value="Rojas Mayta Ketty" placeholder="Apellidos y Nombres de la Madre">
+                                    <input type="text" class="form-control" value="Arrivasplata Rodas Juan Martin" placeholder="Apellidos y Nombres del Padre">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+
+                                    <label for="exampleInputEmail1">Parentesco</label>
+
+                                    <input type="text" class="form-control" value="Madre" placeholder="Mamá">
+                                    <input type="text" class="form-control" value="Padre" placeholder="Papá">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 ">
+                                <div class="form-group ">
+
+                                    <label for="exampleInputEmail1">Teléfono</label>
+
+                                    <input type="number" class="form-control" value="980501414" placeholder="Número de la Madre">
+                                    <input type="number" class="form-control" value="964301756" placeholder="Número del Padre">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary bg-celeste"><span class="glyphicon glyphicon-floppy-disk"></span>
+                            Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <button type="button" class="btn btn-primary  btn-lg btn-block btn-orce back-to">2014 © ORCE<span class="glyphicon glyphicon-chevron-up"></span></button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
